@@ -5,6 +5,6 @@ A cross-platform application that allows users to set time or location based rem
 # Left to implement:
 
 - Finalize UI for android devices
-- Implement builds for reminder cards
+- Implement build for reminder cards
 - Fix minor bugs
 
