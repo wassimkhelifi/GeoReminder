@@ -1,0 +1,4 @@
+#Sun Sep 01 00:51:34 PDT 2019
+base.0=/Users/wassimkhelifi/khelico_projects/georeminder/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
