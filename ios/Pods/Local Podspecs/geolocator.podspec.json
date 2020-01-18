@@ -1,6 +1,6 @@
 {
   "name": "geolocator",
-  "version": "5.1.3",
+  "version": "5.2.0",
   "summary": "Geolocation plugin for Flutter.",
   "description": "Geolocation plugin for Flutter. This plugin provides a cross-platform API for generic location (GPS etc.) functions.",
   "homepage": "https://github.com/baseflowit/flutter-geolocator",

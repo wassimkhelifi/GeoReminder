@@ -9,8 +9,7 @@ class NotificationPlugin {
 
   void _initializeNotifications() {
     _flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
-    final initializationSettingsAndroid =
-        AndroidInitializationSettings('@mipmap/ic_launcher');
+    final initializationSettingsAndroid = AndroidInitializationSettings('@mipmap/ic_launcher');
     final initializationSettingsIOS = IOSInitializationSettings();
     final initializationSettings = InitializationSettings(
       initializationSettingsAndroid,
@@ -28,15 +27,30 @@ class NotificationPlugin {
     }
   }
 
-  Future<void> showAtDayAndTimeNotification(
-      DateTime scheduledNotificationDateTime,
-      int id,
-      String title,
-      String description) async {
+  Future<void> makeNotification(int locationId, String title, String description) async {
     final androidPlatformChannelSpecifics = AndroidNotificationDetails(
-      'your other channel id',
-      'your other channel name',
-      'your other channel description',
+      'channel id',
+      'channel name',
+      'channel description',
+    );
+    final iOSPlatformChannelSpecifics = IOSNotificationDetails();
+    final platformChannelSpecifics = NotificationDetails(
+      androidPlatformChannelSpecifics,
+      iOSPlatformChannelSpecifics,
+    );
+    await _flutterLocalNotificationsPlugin.show(
+      locationId,
+      title,
+      description,
+      platformChannelSpecifics,
+    );
+  }
+
+  Future<void> showAtDayAndTimeNotification(DateTime scheduledNotificationDateTime, int id, String title, String description) async {
+    final androidPlatformChannelSpecifics = AndroidNotificationDetails(
+      'channel id',
+      'channel name',
+      'channel description',
     );
     final iOSPlatformChannelSpecifics = IOSNotificationDetails();
     final platformChannelSpecifics = NotificationDetails(
@@ -52,9 +66,16 @@ class NotificationPlugin {
     );
   }
 
+  Future<void> createNotification(DateTime notificationDateTime, int id, String title, String description) async {
+    var scheduledNotificationDateTime = notificationDateTime;
+    var androidPlatformChannelSpecifics = new AndroidNotificationDetails('channel id', 'channel name', 'channel description');
+    var iOSPlatformChannelSpecifics = new IOSNotificationDetails();
+    NotificationDetails platformChannelSpecifics = new NotificationDetails(androidPlatformChannelSpecifics, iOSPlatformChannelSpecifics);
+    await _flutterLocalNotificationsPlugin.schedule(id, title, description, scheduledNotificationDateTime, platformChannelSpecifics);
+  }
+
   Future<List<PendingNotificationRequest>> getDayAndTimeNotification() async {
-    final pendingNotifications =
-        await _flutterLocalNotificationsPlugin.pendingNotificationRequests();
+    final pendingNotifications = await _flutterLocalNotificationsPlugin.pendingNotificationRequests();
     return pendingNotifications;
   }
 
