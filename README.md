@@ -6,4 +6,7 @@ A cross-platform application that allows a user to set time or location-based re
 
 # Screenshots
 
-### The iOS Experience
+### iOS UI
+
+<img src="../master/screenshots/ios_blank_time.png" width="200">
+
