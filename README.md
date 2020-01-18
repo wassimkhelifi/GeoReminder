@@ -1,10 +1,7 @@
 # Georeminder
 
-A cross-platform application that allows users to set time or location based reminders at any frequency.
+<img src="../master/screenshots/GeoReminderLogo.png" width="300">
 
-# Left to implement:
+A cross-platform application that allows a user to set time or location-based reminders
 
-- Finalize UI for android devices
-- Implement build for reminder cards
-- Fix minor bugs
 
