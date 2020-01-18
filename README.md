@@ -1,4 +1,4 @@
-# Georeminder
+# GeoReminder
 
 <img src="../master/screenshots/georeminder_logo.png" width="500">
 
