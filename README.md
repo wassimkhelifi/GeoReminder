@@ -9,8 +9,8 @@ A cross-platform application that allows a user to set time or location-based re
 ## The iOS Experience
 
 <p float="left">
-  <img src="../master/screenshots/ios_blank_time.png" width="300">
-  <img src="../master/screenshots/ios_blank_time.png" width="300">
-  <img src="../master/screenshots/ios_blank_time.png" width="300">
+  <img src="../master/screenshots/ios_blank_time.png" width="275">
+  <img src="../master/screenshots/ios_blank_time.png" width="275">
+  <img src="../master/screenshots/ios_blank_time.png" width="275">
 </p>
 
