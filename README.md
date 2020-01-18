@@ -6,4 +6,4 @@ A cross-platform application that allows a user to set time or location-based re
 
 # Screenshots
 
-## The iOS Experience
+### The iOS Experience
