@@ -6,6 +6,8 @@ A cross-platform application that allows a user to set time or location-based re
 
 Logo and vectors designed using Adobe Illustrator
 
+API used: https://cloud.google.com/maps-platform/places/
+
 # Screenshots
 
 ## The iOS Experience
