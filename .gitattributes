@@ -1,7 +1,1 @@
-# Auto detect text files and perform LF normalization
-*.dart linguist-detectable=true
-<<<<<<< HEAD
-*.in linguist-detectable=false
-=======
-*makefile linguist-detectable=false
->>>>>>> a050e4dca930b6bd9588da3b50dbc8f43c7e9390
+
